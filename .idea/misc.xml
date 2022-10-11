@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/castm_thumb.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/shape.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/shapebasic.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/shapebasic2.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/shapechild.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/shapeday.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/shapenight.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/shaperec.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/shaperecycler.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/shapesearch.xml" value="0.1185" />
+        <entry key="app/src/main/res/drawable/shapeshadow.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/shapeshadow2.xml" value="0.118" />
+        <entry key="app/src/main/res/drawable/shapesplash.xml" value="0.1185" />
+        <entry key="app/src/main/res/layout/activity_days.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18854166666666666" />
+        <entry key="app/src/main/res/layout/activity_map.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/activity_screen.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/activity_weather.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_5_days.xml" value="0.34444444444444444" />
+        <entry key="app/src/main/res/layout/item_board.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/item_child.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/item_long.xml" value="0.18854166666666666" />
+        <entry key="app/src/main/res/layout/weather_item_group.xml" value="0.2" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.118" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.118" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
