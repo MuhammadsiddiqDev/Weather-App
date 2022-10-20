@@ -70,14 +70,18 @@ internal class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     } finally {
 
                     }
-                    val address: Address = addressList!![0]
+                    val address: Address? = addressList?.firstOrNull()
 
-                    val latLng = LatLng(address.latitude, address.longitude)
-                    lat = address.latitude
-                    lon = address.longitude
+                    address?.let {
+                        val latLng = LatLng(address.latitude, address.longitude)
+                        lat = address.latitude
+                        lon = address.longitude
 
-                    mMap.addMarker(MarkerOptions().position(latLng).title(location))
-                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 14F))
+                        mMap.addMarker(MarkerOptions().position(latLng).title(location))
+                        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 14F))
+                    }
+
+
                 }
                 return false
             }
@@ -165,5 +169,12 @@ internal class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 getMyCurrentLocation()
             }
         }
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        var intent = Intent(this, WeatherActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }

@@ -17,7 +17,7 @@ class SliderVerticalAdapter : RecyclerView.Adapter<SliderVerticalAdapter.ViewHol
 
     fun setData(data: List<DataResponse>) {
         this.data.addAll(data)
-        notifyDataSetChanged()
+        notifyItemRangeInserted(this.data.size - data.size, data.size)
     }
 
 

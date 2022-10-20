@@ -44,7 +44,7 @@ class ScreenActivity : AppCompatActivity() {
             val intent = Intent(this, WeatherActivity::class.java)
             startActivity(intent)
             finish()
-        }, 1500)
+        }, 1450)
     }
 }
 

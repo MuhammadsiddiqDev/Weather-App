@@ -2,6 +2,7 @@ package uz.isystem.weatherapp.ui
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import retrofit2.Call
@@ -51,6 +52,8 @@ class DaysActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     response.body()?.let {
                         setSlider(it)
+                        binding.progressBar.visibility = View.INVISIBLE
+
                     }
                 } else {
                     Log.d("ttt", "${response.errorBody().toString()}")

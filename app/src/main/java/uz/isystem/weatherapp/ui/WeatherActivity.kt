@@ -53,12 +53,12 @@ class WeatherActivity : AppCompatActivity() {
         binding.allButton.setOnClickListener {
             var intent = Intent(this, DaysActivity::class.java)
             startActivity(intent)
-
         }
 
         binding.addButton.setOnClickListener {
             var intent = Intent(this, MapsActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         val result = serviceWeather.getCurrentWeather(
@@ -72,6 +72,8 @@ class WeatherActivity : AppCompatActivity() {
             ) {
                 if (response.isSuccessful) {
                     var data = response.body()
+
+                    binding.progressBar.visibility = View.INVISIBLE
 
                     if (data!!.main.temp < 0) {
                         binding.tempIcon.setImageResource(R.drawable.coldtemprory)
