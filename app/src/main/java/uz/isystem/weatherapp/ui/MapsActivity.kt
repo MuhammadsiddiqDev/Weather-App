@@ -170,6 +170,7 @@ internal class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             }
         }
     }
+<<<<<<< HEAD
 
     override fun onBackPressed() {
         super.onBackPressed()
@@ -177,4 +178,6 @@ internal class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         startActivity(intent)
         finish()
     }
+=======
+>>>>>>> origin/main
 }
